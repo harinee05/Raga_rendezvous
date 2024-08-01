@@ -1,0 +1,43 @@
+/* Hide default avatars */
+[data-testid="stChatMessageAvatar"] {
+    display: none;
+}
+
+/* Style for user messages */
+.user-message {
+    float: right;
+   
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+/* Style for assistant messages */
+.assistant-message {
+    float: left;
+   
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 20%;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+/* Clear floats after messages */
+.stChatMessage {
+    clear: both;
+}
+
+/* Align icons to the right for user messages */
+.user-message img {
+    float: right;
+    margin-left: 10px;
+}
+
+/* Align icons to the left for assistant messages */
+.assistant-message img {
+    float: left;
+    margin-right: 10px;
+}
