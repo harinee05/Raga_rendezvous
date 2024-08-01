@@ -19,8 +19,8 @@ def load_css(file_name):
 load_css("styles.css")
 
 # Initialize Pinecone client
-api_key = "e66c7e18-693a-44e1-998f-d617557eea9f"
-environment = "us-east-1-aws"
+api_key = os.getenv("PINECONE_API_KEY")
+environment = os.getenv("PINECONE_ENVIRONMENT")
 
 # Create Pinecone instance
 pc = PineconeClient(api_key=api_key, environment=environment)
