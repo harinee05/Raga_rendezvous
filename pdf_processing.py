@@ -11,6 +11,7 @@ import logging
 from typing import List
 import time
 from urllib3.exceptions import ProtocolError
+import os
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -20,7 +21,7 @@ app = FastAPI()
 
 # Initialize Pinecone
 try:
-    pc = Pinecone(api_key="e66c7e18-693a-44e1-998f-d617557eea9f")
+    pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
     logger.info("Pinecone client initialized successfully")
 except Exception as e:
     logger.error(f"Failed to initialize Pinecone client: {e}")
