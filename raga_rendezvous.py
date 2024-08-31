@@ -1,5 +1,6 @@
 import streamlit as st
 import ragarend
+import contact
 
 
 # Define the navigation bar
@@ -63,6 +64,4 @@ elif page == "Contact Me":
     st.title("Contact Me")
     # Here, you can call the content from contact.py
     # For simplicity, let's use a placeholder
-    st.write(
-        "This is the Contact Me page. Feel free to reach out with any questions or feedback."
-    )
+    contact.main()

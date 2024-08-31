@@ -1,0 +1,14 @@
+openai
+langchain
+chromadb
+spacy
+fastapi
+pydantic
+pandas
+requests
+numpy
+python-dotenv
+streamlit
+beautifulsoup4
+pinecone-client
+pymongo
