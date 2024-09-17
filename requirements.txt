@@ -2,6 +2,7 @@ openai
 langchain
 chromadb
 spacy
+uvicorn
 fastapi
 pydantic
 pandas
